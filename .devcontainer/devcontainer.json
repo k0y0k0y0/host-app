@@ -1,0 +1,18 @@
+{
+  "name": "host-app",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "host-app",
+  "workspaceFolder": "/usr/src/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",  // JavaScript/TypeScriptのLintingをサポート
+        "esbenp.prettier-vscode",   // コードフォーマッター
+        "ms-vscode.vscode-typescript-tslint-plugin"  // TypeScript用のTSLintサポート
+      ],
+      "settings": {
+        "editor.formatOnSave": true,  // 保存時にフォーマットを自動で実行
+      }
+    }
+  },
+}
