@@ -1,0 +1,36 @@
+{
+  // エディターのデフォルトフォーマッターをPrettierに設定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 保存時に自動的にフォーマットとESLintの修正を適用
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+
+  // エディターのタブサイズをPrettierの設定に合わせる
+  "editor.tabSize": 2,
+
+  // プロジェクトにPrettierの設定がある場合のみフォーマットを適用
+  "prettier.requireConfig": true,
+
+  // インポートパスの自動補完設定
+  // "javascript.updateImportsOnFileMove.enabled": "always",
+  // "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // ファイル保存時の自動保存設定
+  "files.autoSave": "onFocusChange",
+
+  // 追加の設定：ファイルエクスプローラーで隠しファイルを表示
+  "files.exclude": {
+    "**/.git": false,
+    "**/.DS_Store": true
+  },
+
+  // 追加の設定：行末の空白をトリム
+  "files.trimTrailingWhitespace": true,
+
+  // 追加の設定：最後に改行を追加
+  "files.insertFinalNewline": true
+}

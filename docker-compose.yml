@@ -1,6 +1,8 @@
 version: "3"
 services:
   host-app:
+    image: host-app
+    container_name: host-app
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,13 +13,14 @@ services:
         source: .
         target: /usr/src/app
       - type: volume
-        source: host-app-node_modules
+        source: node_modules
         target: /usr/src/app/host-app/node_modules
     networks:
       - microfrontends
     command: ["npm", "run", "dev"]
 volumes:
-  host-app-node_modules:
+  node_modules:
+    name: host-app-node_modules
     driver: local
 networks:
   microfrontends:
