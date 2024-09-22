@@ -8,6 +8,3 @@ WORKDIR /usr/src/app/host-app/
 COPY ./host-app/package*.json .
 
 RUN ["npm", "install"]
-
-# Expose port 3000
-EXPOSE 3000
